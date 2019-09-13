@@ -10,9 +10,9 @@ RSpec.describe Deck do
     let(:spades) { double("13s") }
     subject { Deck.new }
   it "Should include 52 card elements" do
-    expect(subject.deck).to include(Card)
+    expect(subject.deck.all?(Card)).to be true
+    expect(subject.deck).to all (be_a(Card))
     expect(subject.deck.length).to eq(52)
-    # expect(subject.deck.all? {|el| is_a?(Card)} )).to be true
   end
 
   # it "Have 52 unique Card elements" do
