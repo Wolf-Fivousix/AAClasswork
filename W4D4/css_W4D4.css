@@ -1,0 +1,29 @@
+body
+{
+    font-family: sans-serif;
+    background-color: gray;
+}
+body h2
+{
+    font-size: 38px;
+}
+body h1
+{
+    font-size: 38px;
+}
+.ingredients-list li
+{
+    list-style: square inside;
+}
+ol
+{
+    list-style: upper-roman;
+}
+header > img
+{
+    width: 100px;
+}
+ul li a
+{
+    text-decoration: none;
+}
