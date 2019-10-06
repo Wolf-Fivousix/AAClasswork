@@ -1,0 +1,22 @@
+.sections-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sections-nav ul
+{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.sections-nav li {
+  // margin: 10px;
+}
+
+.sections-nav li:hover {
+  background-color: skyblue;
+  border-radius: 10px;
+  // padding-right: 5px;
+  // padding-left: 5px;
+}
