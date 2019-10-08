@@ -1,0 +1,10 @@
+INDEX: Page
+<% @subs.each do |sub| %>
+  <ul>
+    <li><%= link_to "#{sub.title}", sub_url(sub) %></li>
+    <li><a href="<%= sub_url(sub)%>"><%= sub.title %></a></li>
+    <li><%= sub.description %></li>
+    <li>Author: <%= sub.moderator.username %></li>
+  </ul>
+
+<% end %>

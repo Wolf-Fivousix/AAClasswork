@@ -1,0 +1,20 @@
+NEW POST VIEW
+<h2>Create New Post =)</h2>
+<form action="<%= user_posts_url(current_user) %>" method="POST">
+  <input type="hidden" name="hidden[sub_id]" value="<%= @post.sub_id %>">
+
+  <label>Title:
+    <input type="text" name="post[title]" value="">
+  </label>
+  <label>URL:
+    <input type="text" name="post[url]" value="">
+  </label>
+  <label>Content:
+    <input type="text" name="post[content]" value="">
+  </label>
+
+
+  <input type="submit" value="Create New Post">
+</form>
+
+
