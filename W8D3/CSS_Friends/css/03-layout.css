@@ -1,0 +1,29 @@
+/* PHASE 3: Layout */
+
+.content {
+  background: green;
+  display: flex;
+  align-items: space-around;
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-sidebar {
+  background: blue;
+  width: 30%;
+}
+
+.content-main {
+  background: red;
+  width: 70%;
+}
+
+.content, .content-main, .content-sidebar {
+  padding: 0px;
+  min-height: 200px;
+}
+
+
+Hey Lance, I don`t see you around, I`m going to brush
+my teeth and be right back! =)
