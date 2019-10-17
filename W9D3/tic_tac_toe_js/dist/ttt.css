@@ -1,0 +1,32 @@
+ul {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap; 
+}
+
+li {
+  border: black solid;
+  width: 166px;
+  height: 166px;
+  box-sizing: border-box;
+  list-style: none;
+  background-color: gray;
+}
+
+li:hover {
+  background-color: yellow;
+}
+
+.x {
+  background-color: blue;
+  font-size: 120px;
+  color: black;
+  text-align: center;
+}
+
+.o {
+  background-color: red;
+  font-size:120px;
+  color: black;
+  text-align: center;
+}
