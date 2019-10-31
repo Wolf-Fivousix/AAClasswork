@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>...Pokedex... ¯\_(ツ)_/¯</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  <script>
+    (function titleMarquee() {
+      document.title = document.title.substring(1) + document.title.substring(0, 1);
+      setTimeout(titleMarquee, 200);
+    })();
+  </script>
+    <script type="text/javascript">
+      window.POKEMON_TYPES = <%=raw Pokemon::TYPES %>
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/pokeball.svg" alt="pokedex">
+    </header>
+
+    <%= yield %>
+  </body>
+</html>
